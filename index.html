@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عروض الفنيين - معرض باكين أبوتيج</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; }
+        body { background-color: #fcfbfa; color: #333; line-height: 1.6; direction: rtl; text-align: right; }
+        
+        /* هيدر بتدرج ذهبي فخم */
+        header { 
+            background: linear-gradient(135deg, #1a1a1a, #2c2c2c); 
+            color: #d4af37; 
+            text-align: center; 
+            padding: 45px 20px; 
+            border-bottom: 4px solid #d4af37;
+        }
+        header h1 { font-size: 2.3rem; margin-bottom: 10px; font-weight: 900; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        header p { color: #e0e0e0; font-size: 1.1rem; }
+        header h2 { 
+            font-size: 1.3rem; 
+            font-weight: 700; 
+            background: linear-gradient(135deg, #d4af37, #f3e5ab); 
+            display: inline-block; 
+            padding: 6px 25px; 
+            border-radius: 25px; 
+            color: #1a1a1a; 
+            margin-top: 15px; 
+            box-shadow: 0 4px 10px rgba(212,175,55,0.3);
+        }
+
+        .container { max-width: 900px; margin: 30px auto; padding: 0 15px; }
+        .section-title { text-align: center; margin-bottom: 30px; font-size: 1.8rem; color: #1a1a1a; font-weight: 900; border-bottom: 2px solid #d4af37; display: table; margin-left: auto; margin-right: auto; padding-bottom: 5px; }
+
+        .offers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        
+        /* كارد بتفاصيل ذهبية أنيقة */
+        .offer-card { 
+            background: white; 
+            border-radius: 14px; 
+            padding: 25px; 
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06); 
+            border-top: 5px solid #d4af37; 
+            border-right: 1px solid #eee;
+            border-left: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .offer-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(212,175,55,0.15); }
+        .offer-card h3 { color: #1a1a1a; font-size: 1.5rem; margin-bottom: 15px; border-bottom: 2px solid #f7f3e9; padding-bottom: 10px; font-weight: 900; }
+        .offer-details p { margin-bottom: 10px; font-size: 1.05rem; }
+        .offer-details strong { color: #b89728; }
+        
+        .gifts { 
+            background: #fdfaf2; 
+            padding: 14px; 
+            border-radius: 10px; 
+            margin-top: 15px; 
+            border: 1px dashed #d4af37; 
+        }
+        .gifts h4 { font-size: 1.05rem; color: #8c7120; margin-bottom: 8px; font-weight: 700; }
+        .gifts ul { padding-right: 20px; font-size: 0.95rem; }
+        .gifts li { margin-bottom: 4px; }
+
+        /* زر التواصل الذهبي */
+        .contact-box { 
+            background: linear-gradient(135deg, #1a1a1a, #2c2c2c); 
+            color: white; 
+            text-align: center; 
+            padding: 35px; 
+            border-radius: 14px; 
+            margin-top: 40px; 
+            border: 2px solid #d4af37;
+        }
+        .contact-box h3 { margin-bottom: 10px; font-size: 1.6rem; color: #d4af37; }
+        .contact-btn { 
+            display: inline-block; 
+            background: #25d366; 
+            color: white; 
+            padding: 14px 35px; 
+            border-radius: 30px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.3rem; 
+            margin-top: 15px; 
+            box-shadow: 0 4px 15px rgba(37,211,102,0.3); 
+            transition: background 0.2s;
+        }
+        .contact-btn:hover { background: #1ebe5d; }
+
+        footer { text-align: center; padding: 25px; color: #666; font-size: 0.95rem; margin-top: 30px; border-top: 1px solid #e5e5e5; }
+        .developer-sig { font-size: 0.8rem; color: #999; margin-top: 8px; letter-spacing: 0.5px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>معرض باكين أبوتيج</h1>
+        <p>عروض الفنيين الحصرية - معارض البيع المعتمدة</p>
+        <h2>إدارة: النميري</h2>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">تفاصيل العروض والهدايا</h2>
+
+        <div class="offers-grid">
+            <!-- العرض الأول -->
+            <div class="offer-card">
+                <h3>العرض الأول</h3>
+                <div class="offer-details">
+                    <p><strong>المنتجات:</strong> 5 بستله + 5 جالون + 5 كيلو قطيفة</p>
+                    <div class="gifts">
+                        <h4>🎁 الهدايا المستحقة:</h4>
+                        <ul>
+                            <li>تيشرت وكاب</li>
+                            <li>قسيمة شراء بقيمة 300 جنيه</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- العرض الثاني -->
+            <div class="offer-card">
+                <h3>العرض الثاني</h3>
+                <div class="offer-details">
+                    <p><strong>المنتجات:</strong> 7 بستله + 7 جالون + 7 كيلو قطيفة</p>
+                    <div class="gifts">
+                        <h4>🎁 الهدايا المستحقة:</h4>
+                        <ul>
+                            <li>تيشرت وكاب</li>
+                            <li>قسيمة شراء بقيمة 300 جنيه</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- العرض الثالث -->
+            <div class="offer-card">
+                <h3>العرض الثالث</h3>
+                <div class="offer-details">
+                    <p><strong>المنتجات:</strong> 15 بستله + 15 جالون + 15 كيلو قطيفة</p>
+                    <div class="gifts">
+                        <h4>🎁 الهدايا المستحقة:</h4>
+                        <ul>
+                            <li>تيشرت وكاب</li>
+                            <li>قطاعة فيوتيك ومسدس</li>
+                            <li>سكينة ستانلس</li>
+                            <li>2 رولة ومشط</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- العرض الرابع -->
+            <div class="offer-card">
+                <h3>العرض الرابع</h3>
+                <div class="offer-details">
+                    <p><strong>المنتجات:</strong> 25 بستله + 25 جالون + 25 كيلو قطيفة</p>
+                    <div class="gifts">
+                        <h4>🎁 الهدايا المستحقة:</h4>
+                        <ul>
+                            <li>تيشرت وكاب</li>
+                            <li>مكينة صنفرة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- قسم تواصل مع الإدارة -->
+        <div class="contact-box">
+            <h3>للاستفسار وطلب العروض</h3>
+            <p>تواصل معنا مباشرة عبر الهاتف أو الواتساب:</p>
+            <a href="tel:01117457867" class="contact-btn">📞 01117457867</a>
+        </div>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة © معرض باكين أبوتيج - إدارة: النميري 2026
+        <div class="developer-sig">صنع بواسطة البشمهندس زكريا بيوض للتواصل : 01140443978</div>
+    </footer>
+
+</body>
+</html>
